@@ -1,16 +1,18 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import Event from './views/Event.vue' 
+// import Event from './views/Event.vue'
+
 </script>
 
 <template>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-      </nav>
-  <!-- <RouterView /> -->
-      <Event/>
-
+        <RouterLink to="/ShowData">ShowData</RouterLink>
+      </nav> 
+  <RouterView />
+      <!-- <Event/> -->
+      <!-- <Particles/> -->
 </template>
 
 <style scoped>
