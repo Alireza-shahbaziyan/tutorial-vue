@@ -8,10 +8,13 @@ export default {
 </script>
 
 <template>
-  <div class="event-card">
-    <p>{{ event.id }}</p>
-    <p>{{ event.type }}</p>
-  </div>
+  <router-link to="/users/4">
+    <div class="event-card">
+      <p>{{ event.name }}</p>
+      <p>{{ event.username }}</p>
+      <p>{{ event.email }}</p>
+    </div>
+  </router-link>
 </template>
 
 <style scoped>

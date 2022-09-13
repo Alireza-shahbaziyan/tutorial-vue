@@ -11,7 +11,9 @@
 
 <script>
 import EventCard from "@/components/EventCard.vue";
-import axios from "axios";
+// import axios from "axios";
+import EventService from "@/EventService/EventService.js";
+
 export default {
   name: "Event",
   components: {
@@ -23,9 +25,9 @@ export default {
     };
   },
   created() {
-    axios.get(
-      "https://my-json-server.typicode.com/Alireza-shahbaziyan/tutorial-vue/db"
-    ).then(res =>this.events = res.data).catch(erorr=>console.log(erorr))
+    EventService.getEvents()
+      .then((res) => this.events = res.data)
+      .catch((erorr) => console.log(erorr));
   },
 };
 </script>
