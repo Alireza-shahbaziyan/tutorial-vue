@@ -11,10 +11,10 @@ import EventService from "@/EventService/EventService.js";
 
 export default {
   name: "EventDetails",
+  props:['id'],
   data() {
     return {
       event: null,
-      id: 4,
     };
   },
   created() {

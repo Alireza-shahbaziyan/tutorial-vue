@@ -21,8 +21,9 @@ const router = createRouter({
       component:ShowData
     },
     {
-      path:'/users/4',
+      path:'/users/:id',
       name:'EventDetails',
+      props:true,
       component:EventDetails
     }
   ]

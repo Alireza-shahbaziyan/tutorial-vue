@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <router-link to="/users/4">
+  <router-link :to="{ name: 'EventDetails', params: { id: event.id } }">
     <div class="event-card">
       <p>{{ event.name }}</p>
       <p>{{ event.username }}</p>

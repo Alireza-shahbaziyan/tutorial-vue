@@ -11,7 +11,7 @@
 
 <script>
 import EventCard from "@/components/EventCard.vue";
-// import axios from "axios";
+// Axios configuration is done in the EventService.js file 
 import EventService from "@/EventService/EventService.js";
 
 export default {
